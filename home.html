@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script id="sap-ui-bootstrap" type="text/javascript" src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-theme="sap_belize_plus" data-sap-ui-libs="sap.m" data-sap-ui-compatVersion="edge">
+        </script>
+</head>
+
+<body>
+    <div id="root" class="sapUiBody" style="height: 500px;"></div>
+    <script>
+        var oInput = new sap.m.Input();
+        var oDate = new sap.m.DatePicker();
+        var oNota = new sap.m.RatingIndicator();
+        var oSlider = new sap.m.Slider();
+
+        oInput.placeAt('root');
+        oDate.placeAt('root');
+        oNota.placeAt('root').setValue(3.5);
+        oSlider.setValue(60).placeAt('root', 'first');
+    </script>
+</body>
+
+</html>
